@@ -1,0 +1,36 @@
+/* pages/vdo/vdo.wxss */
+.conteiner{
+  width: 90%;
+  /* height: 200rpx; */
+  margin: 20rpx auto;
+  position: relative;
+  /* background: pink; */
+}
+.clear:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.img{
+  float: left;
+}
+.img image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.box{
+  float: left;
+  
+}
+.gm{
+  font-size: 15px;
+  font-family: "Microsoft YaHei";
+  margin: 5rpx; 
+}
+.btn image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.nx{
+  width: 70%;
+  position: absolute;
+  top:66rpx;
+  left: 160rpx;
+}
+

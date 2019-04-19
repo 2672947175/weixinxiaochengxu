@@ -1,0 +1,55 @@
+@import '/pages/shou/tabBarTmp/tabBarTmp';
+/* pages/shou/rumen/rumen.wxss */
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img{
+  width: 100%;
+  position: relative;
+}
+.img image{
+  width: 100%;
+}
+.tecon{
+  width: 100%;
+  position: absolute;
+  top:20%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.texb{
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 50rpx;
+}
+.xun{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  padding:30rpx 0;
+}
+.chu{
+  color: #999;
+  font-size: 12px;
+  margin: 30rpx;
+}
+.xunbox{
+  width: 100%;
+  border-bottom: 1rpx solid #999;
+  margin-bottom: 40rpx;
+  padding-bottom: 30rpx;
+}
+.bton{
+  width: 80%;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+.col{
+  background: #999;
+}

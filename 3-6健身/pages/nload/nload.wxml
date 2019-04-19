@@ -1,0 +1,10 @@
+<!--pages/nload/nload.wxml-->
+<view class="container">
+  <swiper indicator-dots="ture" circular="true">
+    <swiper-item wx:for="{{imgUrls}}">
+      <image src="{{item.titleImage}}" />
+    </swiper-item>
+  </swiper>
+  <button class="btn">下载</button>
+</view>
+

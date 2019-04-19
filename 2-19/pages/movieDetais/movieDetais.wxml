@@ -1,0 +1,27 @@
+<!--pages/movieDetais/movieDetais.wxml-->
+<view class="MD_container">
+  <!-- 电影的大图 -->
+  <view class="img">
+    <image src='{{movieDatas.images.large}}'></image>
+  </view>
+  <!-- 电影的信息 -->
+  <view class="movieMsg">
+    <!-- 影片名 -->
+    <text class="name">{{movieDatas.title}}</text>
+    <!-- 年份 -->
+    <text>上映年份：{{movieDatas.year}}</text>
+    <!-- 导演 -->
+    <text>导演：{{movieDatas.casts[0].name}}</text>
+    <!-- 国别 -->
+    <view>
+      国别：<text>{{movieDatas.countries}}</text>
+    </view>
+    
+    <!-- 主演 -->
+    <view>
+      主演：
+      <text wx:for="{{movieDatas.casts}}">{{item.name}} </text>  
+    </view>
+    
+   </view>
+</view>

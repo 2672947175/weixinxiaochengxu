@@ -1,0 +1,66 @@
+<!--pages/shou/rmshezhe/rmshezhe.wxml-->
+<view class="container">
+  <!-- 介绍 -->
+  <view class="jie">
+    你在此填写的所有信息都能帮助我打最适合你的个性计划
+  </view>
+  <!-- 选项 -->
+  <view class="xuan">
+    <view class="diancon" catchtap="btna0" >
+        <image wx:if="{{!arra0}}" src='/img/xuan/a1.png'></image>
+        <image wx:if="{{arra0}}" src='/img/xuan/duigou.png'></image>
+        <text class="{{aa0}}">每周训练次数</text>
+        <text class="{{aa0}}">{{texta0}}</text>
+        <text wx:if="{{!tu0}}" class='an'>∨</text>
+        <text wx:if="{{tu0}}" class='an'>∧</text>
+        <!-- 下拉 -->
+        <view class="xlcon" wx:if='{{tu0}}'>
+            <view class="jis">你每周有多少天可以进行训练？</view>
+            <view  wx:for="{{arr0}}" catchtap='click0' class="btua {{arrb0[index]}}" data-index0="{{index}}">
+              {{item.texta}}
+            </view>
+        </view>
+    </view>
+    <view class="diancon" catchtap="btna1" >
+        <image wx:if="{{!arra1}}" src='/img/xuan/a2.png'></image>
+        <image wx:if="{{arra1}}" src='/img/xuan/duigou.png'></image>
+        <text class="{{aa1}}">你的活跃度</text>
+        <text class="{{aa1}}">{{texta1}}</text>
+        <text wx:if="{{!tu1}}" class='an'>∨</text>
+        <text wx:if="{{tu1}}" class='an'>∧</text>
+        <!-- 下拉 -->
+        <view class="xlcon" wx:if='{{tu1}}'>
+            <view class="jis">告诉我们你目前每周训练多少小时</view>
+            <view  wx:for="{{arr1}}" catchtap='click1' class="btua {{arrb1[index]}}" data-index1="{{index}}">
+              {{item.texta}}
+            </view>
+        </view>
+    </view>
+    <view class="diancon" catchtap="btna2" >
+        <image  wx:if="{{!arra2}}" src='/img/xuan/a3.png'></image>
+        <image wx:if="{{arra2}}" src='/img/xuan/duigou.png'></image>
+        <text class="{{aa2}}">开始日期</text>
+        <text class="{{aa2}}">{{texta2}}</text>
+        <text wx:if="{{!tu2}}" class='an'>∨</text>
+        <text wx:if="{{tu2}}" class='an'>∧</text>
+    </view>
+     <!-- 下拉 -->
+      <view class="xlcon" wx:if='{{tu2}}'>
+        <view class="jis">你希望计划在何时开始？</view>
+        <view class="section">
+          <picker mode="date" value="{{date}}" start="1555年09月01日" end="5000年09月01日" bindchange="bindDateChange">
+            <view class="picker">
+                {{date}}
+            </view>
+          </picker>
+        </view> 
+        <view class="jis aac">
+          不确定从何是开始？从今天开始，帮助你一路坚持到底。
+        </view>
+        <button class="btnac" catchtap='btna'>确定</button>
+    </view>
+  </view>
+  <view class="ziding" wx:if="{{zd}}">
+    <button class="butn" catchtap="btnan">制定我的计划</button>
+  </view>
+</view>

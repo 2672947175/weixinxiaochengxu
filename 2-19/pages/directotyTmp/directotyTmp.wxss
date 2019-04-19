@@ -1,0 +1,33 @@
+/* pages/directotyTmp/directotyTmp.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:20px; 
+  font-family: "Microsoft YaHei";
+}
+.avatar,.txt,.img{
+  width: 100%;
+}
+.avatar image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  /* 垂直居中 */
+  vertical-align: middle;
+  padding-right: 50rpx;
+}
+.avatar>text{
+  font-size: 15px;
+}
+.img>image{
+  width: 100%;
+}
+.txt{
+  text-indent:2em;
+  box-sizing: border-box;
+  padding: 10rpx 7rpx 0 10rpx;
+}
+.txt>text{
+  font-size: 14px;
+}

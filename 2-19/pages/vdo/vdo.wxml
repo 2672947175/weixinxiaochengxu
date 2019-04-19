@@ -1,0 +1,26 @@
+<!--pages/vdo/vdo.wxml-->
+<view class="conteiner">
+  
+ 
+    <!-- 头像 -->
+    <view class="img">
+      <image src='/images/music/music-start.png'></image>
+    </view>
+    
+    <view class='box'>
+      <!-- 歌名 -->
+      <view class="gm">
+        <text>寂寞沙洲</text>
+      </view>
+      <!-- 按钮 -->
+      <view class="btn">
+        <image catchtap='play' src='{{urla}}'></image>
+      </view>
+    </view>
+  <!-- 进度条 -->
+  <view class="nx">
+     <progress percent='{{da}}' bindtouchmove='fna'></progress>
+  </view>
+ 
+
+</view>

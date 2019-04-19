@@ -1,0 +1,31 @@
+<!--pages/shou/jiaolian/jiaolian.wxml-->
+<view class="container">
+  <view class="img">
+    <image src='{{lian.xunlian}}'></image>
+    <!-- 头像 -->
+    <view class="touimg">
+      <image src='{{lian.img}}'></image>
+      <view class="name">
+      {{lian.name}}
+      </view>
+    </view>
+  </view>
+  <view class='textcon'>
+    <view class="tex">
+        教练简介
+    </view>
+    <view>
+        {{lian.text}}
+    </view>
+    <view>
+        {{lian.text2}}
+    </view>
+    <view class="tex">
+        健身理念
+    </view>
+    <view>
+        {{lian.text}}
+    </view>
+  </view>
+
+</view>

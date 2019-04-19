@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view wx:for="{{sho}}" class="aa">
+    <view catchtap='show{{index}}'>
+      <image src="{{item.titleImage}}"></image>
+    </view>
+  </view>
+</view>
+

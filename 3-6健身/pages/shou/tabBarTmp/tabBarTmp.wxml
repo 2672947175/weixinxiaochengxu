@@ -1,0 +1,22 @@
+<template name="tabTmp">
+  <view class="tabcon">
+    <view class="tan">
+      <view bindtap='shou'>
+      <image src="/img/tab/shouye.png"></image>
+        首页
+      </view> 
+    </view>
+    <view class="tan">
+      <view bindtap='xia'>
+        <image src="/img/tab/customer-nike.png"></image>
+          下载
+      </view>
+    </view>
+    <view class="tan">
+      <view bindtap='mi'>
+        <image src="/img/tab/nicheng.png"></image>
+          我的
+      </view>
+      </view>
+  </view>
+</template>

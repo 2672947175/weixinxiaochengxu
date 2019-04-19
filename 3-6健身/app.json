@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/shou/index/index",
+    "pages/shou/huoyin/huoyin",
+    "pages/shou/jiaolian/jiaolian",
+    "pages/ myself/ myself",
+    "pages/shou/rumen/rumen",
+    "pages/shou/rmshezhe/rmshezhe",
+    "pages/shou/duanshi/duanshi",
+    "pages/shou/gailan/gailan",
+    "pages/myselfxianqing/myselfxianqing",
+    "pages/nload/nload"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Nike健身体验房",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/shou/index/index",
+        "text": "首页",
+        "iconPath": "/img/tab/shouye.png",
+        "selectedIconPath": "/img/tab/shouye1.png"
+      },
+      {
+        "pagePath": "pages/nload/nload",
+        "text": "下载",
+        "iconPath": "/img/tab/customer-nike.png",
+        "selectedIconPath": "/img/tab/customer-nike1.png"
+      },
+      {
+        "pagePath": "pages/ myself/ myself",
+        "text": "我的",
+        "iconPath": "/img/tab/nicheng.png",
+        "selectedIconPath": "/img/tab/nicheng1.png"
+      }
+    ],
+    "usingComponents": {}
+  }
+}

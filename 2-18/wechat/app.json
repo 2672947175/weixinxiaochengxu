@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/as/as"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "扩大进口",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f00"
+  }
+}

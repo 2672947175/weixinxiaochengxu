@@ -1,0 +1,10 @@
+<template name="gaiTmp">
+  <view class="boxcon">
+    <!-- 图片 -->
+    <image src='{{image}}'></image>
+    <!-- 时间 -->
+    <text class="sj">{{time}}</text>
+    <text class="tet">{{name}}</text>
+  </view>
+</template>
+

@@ -1,0 +1,11 @@
+/**app.wxss 是全局样式在全局，所有的页面中都生效 **/
+.container {
+  height: 100%;
+  /* 伸缩盒模型 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

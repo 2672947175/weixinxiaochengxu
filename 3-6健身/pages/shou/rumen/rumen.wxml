@@ -1,0 +1,31 @@
+<import src="/pages/shou/tabBarTmp/tabBarTmp"/>
+<!--pages/shou/rumen/rumen.wxml-->
+<view class="container">
+  <!-- 图片 -->
+  <view class="img">
+    <image src='/images/jibenranzhi/bigImg.jpg'></image>
+    <view class="tecon">
+        <view class="texb">
+           入门计划
+        </view>
+        <view class="zou">
+          4周
+        </view>
+    </view>
+  </view>
+  <!-- 训练级别 -->
+  <view class="xunbox">
+     <view class="xun" wx:for='{{xunl}}'>
+        <view class="lian">{{item.textb}}</view>
+        <view class="chu">{{item.textc}}</view>
+      </view>
+  </view>
+ 
+
+  <!--设置 -->
+  <button class="bton" catchtap='btn' wx:if="{{!tf}}">设置计划</button>
+  <button class="bton col" wx:if="{{tf}}">你已创建</button>
+</view>
+ <view>
+    <template is="tabTmp"></template>
+  </view>

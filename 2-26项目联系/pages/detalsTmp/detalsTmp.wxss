@@ -1,0 +1,23 @@
+/* pages/detalsTmp/detalsTmp.wxss */
+.container{
+  width: 100%;
+}
+.avatar{
+  width: 100%;
+}
+.avatar image{
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+  padding: 20rpx;
+}
+
+.img image{
+  width: 100%;
+}
+.tex{
+  font-size: 28rpx;
+  text-indent: 2em;
+  padding:20rpx;
+  box-sizing: border-box;
+}

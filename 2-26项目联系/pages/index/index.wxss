@@ -1,0 +1,21 @@
+/* pages/index/index.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 200rpx 0 0 0;
+ 
+}
+.img image{
+  width: 100%;
+  height: 100%;
+   border-radius: 50%;
+}
+.tex{
+ font-size: 40rpx;
+ margin-bottom: 150rpx; 
+}

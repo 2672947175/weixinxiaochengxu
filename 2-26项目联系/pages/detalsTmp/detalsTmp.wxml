@@ -1,0 +1,19 @@
+<!--pages/detalsTmp/detalsTmp.wxml-->
+<template name="detalsTmp">
+<view class='container'>
+
+  <!-- 头像 和 日期 -->
+  <view class="avatar">
+    <image src='{{avatar}}'></image>
+    <text>{{date}}</text>
+  </view>
+  <!-- 图片 -->
+  <view class="img">
+    <image src='{{detail_img}}'></image>
+  </view>
+  <!-- 文字说明 -->
+  <view class="tex">
+    <text>{{detail_content}}</text>
+  </view>
+</view>
+</template>

@@ -1,0 +1,14 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 头像 -->
+  <view class="img">
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+  <view class="tex">
+    <text>
+      hello {{userInfo.nickName}}
+    </text>
+  </view>
+  <!--点击获取授权 -->
+  <button   open-type='getUserInfo' bindgetuserinfo="getuser" wx:if="{{idxif}}">请点击获取授权</button>
+</view>

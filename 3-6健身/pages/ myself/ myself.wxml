@@ -1,0 +1,60 @@
+<!--pages/ myself/ myself.wxml-->
+<view class="container">
+  <!-- 头像 -->
+  <view class='allcontainer'>
+    <view class='avatar'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class="textcon">
+      <view class="tex">
+       {{userInfo.nickName}}
+      </view>
+      <view class='texta'>你已经完成训练：0个</view>
+    </view>
+    <view class="btncon">
+      <view class="bbu">
+      
+        <button open-type='getUserInfo' bindgetuserinfo='getuser' style='display:{{show==true?"block":"none"}}'>请点击授权</button>
+      </view>
+       <view class="lian">联系我们</view>
+    </view> 
+  </view>
+  <!-- 进行中的训练 -->
+  <view class="bocon">
+    进行中的训练
+  </view>
+  <!-- 入门列表 -->
+  <view class="conxun" catchtap="bta" wx:if="{{tfa}}" catchtap="btna">
+      <!-- 图片 -->
+      <image src='{{rumen.img}}'></image>
+      <!-- 标题 -->
+      <view class="tit">
+        {{rumen.text}}
+      </view>
+      <!-- 今日训练 -->
+      <view class="jinri">
+        <text class='xun'>今日:训练日</text>
+        <view class="wei">-未完成-</view>
+      </view>
+    </view>
+  <!-- 进行中的训练列表 -->
+  <view class="xuncon" wx:if="{{tfb}}">
+    <view class="conxun" wx:for='{{arr}}' catchtap="btn" data-index="{{index}}">
+      <!-- 图片 -->
+      <image src='{{item.image}}'></image>
+      <!-- 介绍 -->
+      <view class="duan">
+        短时训练
+      </view>
+      <!-- 标题 -->
+      <view class="tit">
+        {{item.name}}
+      </view>
+      <!-- 今日训练 -->
+      <view class="jinri">
+        <text class='xun'>今日训练</text>
+        <view class="wei">-未完成-</view>
+      </view>
+    </view>
+   </view>
+</view>

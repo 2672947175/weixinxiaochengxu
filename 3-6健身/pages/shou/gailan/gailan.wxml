@@ -1,0 +1,83 @@
+<import src="/pages/shou/gailanTamp/gailanTamp"/>
+
+<!--pages/shou/gailan/gailan.wxml-->
+<view class="container">
+  <view class="content">
+      <!-- 图片 -->
+      <view class="imgcom">
+        <image src="{{dtas.titleImg}}">
+        </image>
+        <!-- 标题 -->
+        <view class="biao">{{dtas.title}}</view>
+        <view class="conitm">
+          <!-- 时间 -->
+          <view>
+            <view>{{dtas.time}}</view>
+            <view class="col">分钟</view>
+          </view>
+          <!-- 强度 -->
+           <view>
+            <view>{{dtas.strong}}</view>
+            <view class="col">强度</view>
+          </view>
+          <!-- 水平 -->
+           <view>
+            <view>{{dtas.level}}</view>
+            <view class="col">水平</view>
+          </view>
+        </view>
+      </view>
+      <!-- 点击开始 -->
+      <view class="btn">
+        开始
+      </view>
+  </view>
+  <!-- 适合人群 -->
+  <view class="shihe">
+      <view class="tex">适合人群</view>
+      <view class="texcon">{{dtas.desc}}</view>
+      <!-- 大图 -->
+      <view class="imgcon">
+        <image src='{{dtas.bigImg}}'></image>
+        <view class="itex">{{dtas.msg}}</view>
+      </view>
+  </view>
+  <view class="chuan">
+    <view class="texta">训练创建者</view>
+    <view class="texa">{{dtas.name}}</view>
+  </view>
+  <!-- 热身 -->
+  <view class="contar">
+    <view class="ta">热身</view>
+    <view wx:for="{{dtas.bodyHot}}">
+      <template is="gaiTmp" data="{{...item}}"></template>
+    </view>
+  </view>
+  <!-- 核心肌群 -->
+  <view class="contar">
+    <view class="ta">核心肌群</view>
+    <view wx:for="{{dtas.power}}">
+      <template is="gaiTmp" data="{{...item}}"></template>
+    </view>
+  </view>
+  <!-- 放松 -->
+  <view class="contar">
+    <view class="ta">放松</view>
+    <view wx:for="{{dtas.relax}}">
+      <template is="gaiTmp" data="{{...item}}"></template>
+    </view>
+  </view>
+  <!-- 按钮 -->
+  <view class="btna" wx:if='{{!offa}}'>
+   <button wx:if="{{!off}}" catchtap="tianjia">添加此训练</button>
+   <button wx:if="{{off}}" catchtap="chakan">查看我的训练</button>
+    <button class="bt">立即开始</button>
+  </view>
+  <view class="btna" wx:if='{{offa}}'>
+    <button catchtap="fengxian">分享给好友</button>
+    <button class="bt" catchtap="chanchu">删除训练</button>
+  </view>
+
+  <!-- tabBar -->
+  <view class="btma"></view>
+</view>

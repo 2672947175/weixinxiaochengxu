@@ -1,0 +1,41 @@
+<!--pages/directory/directory.wxml-->
+<!-- 如果想使用模板，要先引入 y引入wxml-->
+<import src="/pages/directotyTmp/directotyTmp" />
+<view>
+  <!-- 轮播图 -->
+  <view class="swiper-container">
+    <swiper class="carousel" indicator-dots="true"  indicator-color="rgba(93, 238, 57, 0.5)" indicator-active-color="#fff" autoplay="true" circular="true" >
+      <swiper-item>
+      <image src='/images/detail/list/j1.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+      <image src='/images/detail/list/j2.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+      <image src='/images/detail/list/j3.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+      <image src='/images/detail/list/j4.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+      <image src='/images/detail/list/j5.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+      <image src='/images/detail/list/j6.jpg'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 循环循然 -->
+  <view>
+    <view wx:for="{{arr}}">
+      <view bindtap='click' data-index="{{index}}">
+         <template is="dirTmp" data="{{...item}}"></template>
+      </view>
+    </view>
+  </view>
+  <view class="aud">
+      <button bindtap='aud'>音乐播放</button>
+       <button bindtap='vdo'>视频播放</button>
+  </view>
+
+</view>

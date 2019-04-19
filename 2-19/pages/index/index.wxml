@@ -1,0 +1,14 @@
+<!--pages/index/index.wxml-->
+<!-- 给一个根标签 -->
+<view class='allcontainer'>
+  <view class='avatar'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+  <view>
+    <text class='tex'>
+      hello {{userInfo.nickName}}
+    </text>
+  </view>
+    <button open-type='getUserInfo' bindgetuserinfo='getuser' style='display:{{show==true?"block":"none"}}'>请点击授权</button>
+    `
+</view>

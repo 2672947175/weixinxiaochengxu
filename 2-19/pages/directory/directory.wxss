@@ -1,0 +1,17 @@
+/* pages/directory/directory.wxss */
+@import '/pages/directotyTmp/directotyTmp';
+.swiper-container{
+  width: 100%;
+}
+.carousel{
+  width: 100%;
+  height: 480rpx;
+}
+.carousel image{
+  width: 100%;
+}
+.aud button{
+  width: 300rpx;
+  line-height: 100rpx;
+  margin: 100rpx auto;
+}

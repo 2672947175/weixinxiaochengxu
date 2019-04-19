@@ -1,0 +1,133 @@
+@import '/pages/shou/gailanTamp/gailanTamp';
+/* pages/shou/gailan/gailan.wxss */
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Microsoft YaHei";
+}
+.content{
+  width: 100%;
+  position: relative;
+}
+.content image{
+  width: 100%;
+}
+.biao{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top:15%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 8rpx;
+}
+.conitm{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top:40%;
+}
+.conitm>view{
+  width: 33.5%;
+  text-align: center;
+  color: #fff;
+  border-right: 1rpx solid #999;
+  /* font-size: 15px; */
+}
+.conitm>view:last-child{
+   border-right: none;
+}
+.col{
+  font-size: 14px;
+}
+.btn{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: greenyellow;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 10%;
+  left:50%;
+  margin-left: -50rpx;
+}
+.shihe{
+  width: 100%;
+  text-align: center;
+}
+.tex{
+  font-size: 21px;
+  font-weight: 500;
+  padding: 20rpx 0;
+}
+.texcon{
+  font-size: 15px;
+  padding: 10rpx 0rpx 20rpx 0;
+}
+.imgcon{
+  width: 100%;
+  position: relative;
+}
+.imgcon image{
+  width: 100%;
+}
+.itex{
+  position: absolute;
+  top:35%;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  padding: 0 120rpx;
+  box-sizing: border-box;
+}
+.chuan{
+  width: 100%;
+  text-align: center;
+}
+.texta{
+  font-size: 16px;
+  padding: 20rpx 0;
+}
+.texa{
+  font-size: 20px;
+  font-weight: 500;
+    padding: 20rpx 0;
+}
+.contar{
+  width: 100%;
+}
+.ta{
+  width: 100%;
+  padding: 10rpx 30rpx;
+  background-color: #ddd;
+  font-size: 14px;
+  color: #888;
+}
+.btna{
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  background-color: #000;
+  display: flex;
+  padding: 10rpx 0;
+}
+.btna button{
+  width: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #000;
+}
+.btna .bt{
+  border-radius: 0;
+  border-left: 1px solid #fff;
+}
+.btma{
+  margin-bottom: 25%;
+}

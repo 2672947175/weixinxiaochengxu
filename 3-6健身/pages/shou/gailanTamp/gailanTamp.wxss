@@ -1,0 +1,14 @@
+/* pages/shou/gailanTamp/gailanTamp.wxss */
+.boxcon{
+  width: 100%;
+  border: 2rpx solid #ddd;
+  font-size: 15px;
+}
+.boxcon image{
+  width: 150rpx;
+  height: 150rpx;
+  vertical-align: middle;
+}
+.sj{
+  padding: 0 50rpx;
+}

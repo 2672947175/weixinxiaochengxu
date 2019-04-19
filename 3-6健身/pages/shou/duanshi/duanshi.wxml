@@ -1,0 +1,28 @@
+<import src="/pages/shou/tabBarTmp/tabBarTmp"/>
+<!--pages/shou/duanshi/duanshi.wxml-->
+<view class="container">
+  <view class="content" wx:for="{{dat0}}" catchtap='click' data-index="{{index}}">
+      <!-- 图片 -->
+      <view class="imgcom">
+        <image src="{{item.titleImage}}">
+        </image>
+        <view class="itm">
+          <view>15</view>
+          <view>分钟</view>
+        </view>
+      </view>
+      <!-- 介绍 -->
+      <view class="tet">
+        <view>{{item.title}}</view>
+        <view class="clo">{{item.level}}</view>
+      </view> 
+      <view class="imasa" wx:if="{{arr[index]}}">
+        <image src='/img/xuan.png'></image>
+        已选
+      </view>
+  </view>
+  <button class="btns">更多训练</button>
+  <view>
+    <template is="tabTmp"></template>
+  </view>
+</view>

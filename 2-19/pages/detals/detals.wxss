@@ -1,0 +1,53 @@
+/* pages/detals/detals.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Microsoft YaHei";
+  font-size: 15px;
+}
+/* 图片 */
+.img{
+  width: 100%;
+}
+.img image{
+  width: 100%;
+}
+/* 发布信息 */
+.msg{
+  width: 100%;
+}
+.head-data image{
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+}
+/* 中划线和按钮部分 */
+.zhx{
+  width: 100%;
+  position: relative;
+}
+.zhx image{
+  width: 90rpx;
+  height: 90rpx;
+  margin:  0 10rpx;
+}
+.zhx .icon{
+  margin-left:65%;
+}
+.zhx .line{
+  width: 100%;
+  border:1rpx solid #ccc;
+  position:absolute;
+  bottom: 50rpx;
+  z-index: -1;
+}
+/* 按钮 */
+.btn button{
+  width: 300rpx;
+  margin: 40rpx 0;
+}
+.txt{
+  width: 100%;
+  text-indent:2em;
+}

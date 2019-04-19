@@ -1,0 +1,19 @@
+<!--pages/directotyTmp/directotyTmp.wxml-->
+<!-- 模板结构三段式 -->
+<template name="dirTmp">
+  <view class="container">
+    <!-- 头像和日期 -->
+    <view class="avatar">
+      <image src='{{avatar}}'></image>
+      <text>{{date}}</text>
+    </view>
+    <!-- 图片 -->
+    <view class="img">
+      <image src='{{detail_img}}'></image>
+    </view>
+    <!-- 文字说明 -->
+    <view class="txt">
+      <text>{{detail_content}}</text>
+    </view>
+  </view>
+</template>

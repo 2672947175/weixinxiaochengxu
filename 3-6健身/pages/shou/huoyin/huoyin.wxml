@@ -1,0 +1,23 @@
+<import src="/pages/shou/tabBarTmp/tabBarTmp"/>
+<!--pages/shou/huoyin/huoyin.wxml-->
+<view class="container">
+  <view class="conbox" wx:for="{{jiaolian}}" catchtap='jiao'  data-index="{{index}}">
+    <view class='img'>
+      <image src='{{item.img}}'></image>
+    </view>
+    <view class="texcon">
+        <!-- 名字 -->
+        <view class="hb">
+          {{item.name}}
+        </view>
+        <!-- 介绍 -->
+        <view>
+         {{item.text}}
+        </view>
+    </view>
+  </view>  
+</view>
+<view>
+    <template is="tabTmp"></template>
+</view>
+

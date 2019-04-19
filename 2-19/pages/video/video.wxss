@@ -1,0 +1,7 @@
+/* pages/video/video.wxss */
+.vi{
+  width: 100%;
+}
+.vi video{
+  width: 100%;
+}

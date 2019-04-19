@@ -1,0 +1,16 @@
+<!--pages/movie/movie.wxml-->
+<view class='movie_container' wx:for="{{movieData}}" catchtap='handleclick' data-index="{{index}}">
+  <!-- 电影的海报 -->
+  <image src='{{item.images.large}}'></image>
+  <!-- 电影的简介 -->
+  <view class="movie_jj">
+    <!-- 电影名称 -->
+    <text class="name">电影名称：{{item.title}}</text>
+    <!-- 上映年份 -->
+    <text class="year">上映年份：{{item.year}}</text>
+    <!-- 导演 -->
+    <text class="dir" wx:for-item="itemName" wx:for="{{item.directors}}">导演：{{itemName.name}}</text>
+  </view>
+  <!-- 评分 -->
+    <text class='rate'>{{item.rating.average}}</text>
+</view>

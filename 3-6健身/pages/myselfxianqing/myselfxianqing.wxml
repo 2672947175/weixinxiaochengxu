@@ -1,0 +1,31 @@
+<!--pages/myselfxianqing/myselfxianqing.wxml-->
+<view class="container">
+  <!-- 图片 -->
+  <view class="img">
+    <image src='/images/jibenranzhi/bigImg.jpg'></image>
+    <!-- 内容 -->
+    <view class="neicon">
+      <!-- 标题 -->
+      <view class='tite'>- 今日训练 -</view>
+      <view class="nai">耐力</view>
+      <view class="nai">健身入门基本标准跑</view>
+      <view class="feng">15分钟</view>
+    </view>
+  </view>
+  <!-- 完成程度 -->
+  <view class="wangcheng">
+    <view class="tet">0/<text>14</text> </view>
+    <view class="btna">本周计划</view>
+    <view class="btna">完整计划</view>
+    <view class="btna">分享给好友</view>
+  </view>
+  <button class="btnb" catchtap='btnb' >结束计划</button>
+  <view class="zhezhao" wx:if="{{tf}}">
+    <view class="neibox">
+      <view class='txt'>一旦结束计划，之前的</view>
+      <view class='txt'>努力都白费咯，确定要结束吗？</view>
+      <button class="btnc" catchtap='btncf'>不我在坚持一下</button>
+      <button class="btnc" catchtap='btnct'>是，立即结束计划</button>
+    </view>
+  </view>
+</view>

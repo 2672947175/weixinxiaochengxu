@@ -1,0 +1,130 @@
+/* pages/ myself/ myself.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+.allcontainer{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  box-sizing: border-box;
+  padding: 30rpx;
+  position: relative;
+}
+.avatar{
+  padding-right: 30rpx;
+}
+.avatar>image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+   vertical-align: middle;
+ 
+}
+.textcon{
+  border-left: 1rpx solid #999;
+  padding-left: 30rpx;
+  margin-top: 20rpx;
+}
+.tex{
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0 0 10rpx 0;
+}
+.texta{
+  font-size: 13px;
+}
+.btncon{
+  position: absolute;
+  right: 30rpx;
+  top:30rpx;
+  height: 82rpx;
+}
+button{
+  font-size: 14px;
+  height: 66rpx;
+  line-height: 66rpx;
+}
+.lian{
+  font-size: 13px;
+  color: #999;
+  text-align: right;
+  width: 100%;
+}
+.bbu{
+  height: 70rpx;
+}
+.bocon{
+  width: 100%;
+  height: 50rpx;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50rpx;
+}
+.conxun{
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+  color: #fff;
+}
+.conxun image{
+  width: 100%;
+  height: 100%;
+  
+  
+}
+.duan{
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top:40rpx;
+  left:40rpx;
+}
+.tit{
+  position: absolute;
+  top:30%;
+  left: 50%;
+  font-weight: 800;
+  transform: translate(-50%);
+  font-size: 25px;
+}
+.jinri{
+  position: absolute;
+  top:60%;
+  left: 50%;
+   font-weight: 550;
+  transform: translate(-50%);
+  font-size: 16px;
+}
+.wei{
+  margin-top:20rpx;
+  background-color: rgb(255, 30, 0);
+  padding: 4rpx;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 13px;
+}
+.xuncon{
+  width: 100%;
+}
